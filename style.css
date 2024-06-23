@@ -95,7 +95,6 @@ header {
 .card-item {
     padding: 2.5rem 2rem 1rem;
     border-radius: 10px;
-    width: 350px;
     text-align: center;
 
     .card__price {
@@ -155,5 +154,20 @@ header {
     hr {
         border: none;
         background-color: hsl(234, 14%, 74%);
+    }
+}
+
+@media (max-width:700px) {
+    body {
+        padding: 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card__pro {
+        transform: scaleY(1);
     }
 }
