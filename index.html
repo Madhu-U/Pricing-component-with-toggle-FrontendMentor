@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | [Challenge Name Here]</title>
@@ -17,19 +21,21 @@
   <body>
     <header>
       <h1 class="card__title">Our Pricing</h1>
-      <div class="card__toggle">
+      <d iv class="card__toggle">
         <p>Annually</p>
-        <input type="checkbox" name="price-toggle" id="price-toggle" />
-        <label for="price-toggle"></label>
+        <div class="toggle">
+          <input type="checkbox" name="price-toggle" id="price-toggle" />
+          <label for="price-toggle"></label>
+        </div>
         <p>Monthly</p>
-      </div>
+      </d>
     </header>
 
     <main class="card">
       <div class="card__basic card-item">
         <p>Basic</p>
         <p class="card__price annually">&dollar;<span>199.99</span></p>
-        <p class="card__price monthly">&dollar;<span>19.99</span></p>
+        <p class="card__price monthly hidden">&dollar;<span>19.99</span></p>
         <hr />
         <p>500 GB Storage</p>
         <hr />
@@ -40,24 +46,26 @@
         <input type="button" value="Learn More" />
       </div>
 
-      <div class="card__basic card-item">
-        <p>Professional</p>
-        <p class="card__price annually">&dollar;<span>249.99</span></p>
-        <p class="card__price monthly">&dollar;<span>24.99</span></p>
-        <hr />
-        <p>1 TB Storage</p>
-        <hr />
-        <p>5 Users Allowed</p>
-        <hr />
-        <p>Send up to 10 GB</p>
-        <hr />
-        <input type="button" value="Learn More" />
+      <div class="card__pro card-item">
+        <div>
+          <p>Professional</p>
+          <p class="card__price annually">&dollar;<span>249.99</span></p>
+          <p class="card__price monthly hidden">&dollar;<span>24.99</span></p>
+          <hr />
+          <p>1 TB Storage</p>
+          <hr />
+          <p>5 Users Allowed</p>
+          <hr />
+          <p>Send up to 10 GB</p>
+          <hr />
+          <input type="button" value="Learn More" />
+        </div>
       </div>
 
-      <div class="card__basic card-item">
+      <div class="card__master card-item">
         <p>Master</p>
         <p class="card__price annually">&dollar;<span>399.99</span></p>
-        <p class="card__price monthly">&dollar;<span>39.99</span></p>
+        <p class="card__price monthly hidden">&dollar;<span>39.99</span></p>
         <hr />
         <p>2 TB Storage</p>
         <hr />
@@ -67,9 +75,6 @@
         <hr />
         <input type="button" value="Learn More" />
       </div>
-
-      <div class="card__pro card-item"></div>
-      <div class="card__master card-item"></div>
     </main>
 
     <script src="./script.js"></script>
