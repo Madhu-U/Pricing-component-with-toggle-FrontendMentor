@@ -28,6 +28,7 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: hsl(240, 78%, 98%);
     min-height: 100svh;
+    background: url(./images/bg-top.svg) no-repeat 100%, url(images/bg-bottom.svg) no-repeat 0 100%;
 }
 
 header {
@@ -90,6 +91,7 @@ header {
     display: flex;
     font-size: 1rem;
     font-weight: 700;
+    flex-wrap: wrap;
 }
 
 .card-item {
